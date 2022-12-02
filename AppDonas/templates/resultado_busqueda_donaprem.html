@@ -1,0 +1,25 @@
+{% extends "padre.html" %}
+
+{% load static %}
+
+{% block mensaje_dinamico %}
+<h1>Donas premium encontradas:</h1> 
+
+
+{% if donaprem_seleccionados %}
+<br>
+    {% for donaprem in donaprem_seleccionados %}
+        <li>{{ donaprem.sabor }}</li>
+        <li>{{ donaprem.precio }}</li>
+        <br>
+    {% endfor %}
+</br>
+
+{% else %}
+
+<h2 style="color: white"> No encontramos la dona ingresada!</h2>
+
+{% endif %}
+
+
+{% endblock %}

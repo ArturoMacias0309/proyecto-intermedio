@@ -1,0 +1,26 @@
+{% extends "padre.html" %}
+
+{% load static %}
+
+{% block mensaje_dinamico %}
+<h2> Busca donas premium aqui!</h2>
+
+
+
+<form action="{% url 'resultado_busqueda_donaprem'%}" method="GET">
+    <div>
+        <p>Sabor</p>
+        <input type="text" name="sabor" id="sabor_donaprem">
+    </div>
+        <input type="submit" value="Buscar">
+    </div>      
+</form>
+{% endblock %}
+
+
+
+
+
+
+
+

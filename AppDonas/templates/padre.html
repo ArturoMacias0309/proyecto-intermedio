@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Bienvenido a Donatopia!</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <a class="btn btn-primary" href="inicio">inicio</a>
+                <a class="btn btn-primary" href="donaprem">Agregar Dona Premium</a>
+                <a class="btn btn-primary" href="donareg">Agregar Dona Regular</a>
+                <a class="btn btn-primary" href="malteadas">Agregar Malteada</a>
+                <a class="btn btn-primary" href="busqueda_donaprem">Buscar Dona Premium</a>
+                
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="text-center text-white">
+                            {% block mensaje_dinamico %}
+                            {% endblock %}
+            </body>
+</html>
+<footer>
+    {% block mensaje_final %}
+    {% endblock %}
+</footer>
